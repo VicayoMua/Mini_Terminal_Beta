@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Mini Terminal</title>
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="index.css"/>
+
+</head>
+
+<body>
+
+<div class="main-page">
+
+    <div class="header">
+        <h1>Mini Terminal</h1>
+        <button type="button" id="button_to_switch_theme">🌙</button>
+    </div>
+
+    <nav class="view-navigation" id="view-navigation">
+        <!--        <button-->
+        <!--                type="button"-->
+        <!--                onmouseover="this.style.textDecoration='underline'"-->
+        <!--                onmouseout="this.style.textDecoration='none'"-->
+        <!--                onclick="alert('<Window #1> Button clicked!')"> { Window #1 }-->
+        <!--        </button>-->
+    </nav>
+
+    <div class="terminal-container" id="terminal-container">
+        <!--        <div class="terminal-tab" id="terminal-tab-1" style="display: block;">-->
+        <!--            <div dir="ltr" class="terminal xterm xterm-dom-renderer-owner-1"> ...</div>-->
+        <!--        </div>-->
+    </div>
+
+    <div class="additional-buttons">
+        <button
+                type="button"
+                id="button_to_open_new_terminal_tab">
+            New Terminal Tab
+        </button>
+        <button
+                type="button"
+                id="button_to_save_terminal_log">
+            Save Terminal Log
+        </button>
+        <button
+                type="button"
+                id="button_to_add_files_to_terminal">
+            Add Files To Terminal
+        </button>
+    </div>
+
+    <div class="footer">
+        <p>Author(s): Vicayo Zhang</p>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+<!--
+
+    Symbol '*' remarks the finished tasks.
+    Symbol '?' remarks the tasks that we may need to update.
+
+    Built-in Functions:
+        1 - sh
+        2 - wget
+        3 - ping
+
+    Challenging:
+        0 - implement close current terminal tab button (button_to_close_current_terminal_tab)
+        0 - window size long-then-short auto-fit issues.
+        1 - make editor window size changeable.
+        2 - solve issues with "add local file button" for PDF files.
+        3 - handle more keyboard inputs: direction arrows, and tab (mute all other inputs...)
+
+-->
